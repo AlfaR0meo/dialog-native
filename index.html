@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Кодировка страницы -->
+    <meta charset="UTF-8">
+    <!-- Заголовок страницы в браузере -->
+    <title>Starter</title>
+    <!-- Адаптив -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Иконка сайта во вкладке браузера -->
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Подключение скриптов -->
+    <script src="./js/script.js" defer></script>
+    <!-- Цвет окружающего UI в некоторых моб. браузерах -->
+    <meta name="theme-color" content="black">
+</head>
+<body>
+    <div class="page-wrapper">
+
+        <div class="container container--md">
+            <h1>Dialog tag for native modals</h1>
+            
+            <p>Животные героев «Гарри Поттера»</p>
+            <dl>
+                <dt>Букля</dt>
+                <dd>Полярная сова Гарри Поттера</dd>
+                <dt>Живоглот</dt>
+                <dd>Полукот Гермионы Грейнджер</dd>
+                <dt>Пушистик</dt>
+                <dd>Кролик Лаванды Браун</dd>
+                <dt>Нагайна</dt>
+                <dd>Змея Волан-де-Морта</dd>
+            </dl>
+
+            <dl>
+                <dt>Firefox</dt>
+                <dt>Mozilla Firefox</dt>
+                <dt>FF</dt>
+                <dd>
+                Свободный браузер на движке Gecko,
+                разработкой и распространением которого
+                занимается Mozilla Corporation.
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>Chrome</dt>
+                <dd>Браузер, разрабатываемый компанией Google, вышел в 2008 году.</dd>
+                <dd>Элемент 6-й группы 4-го периода периодической системы.</dd>
+            </dl>
+
+
+            <button data-dialog-btn-for="1" class="dialog-opener-btn" type="button">Открыть модалку 1 ✅</button>
+            <button data-dialog-btn-for="2" class="dialog-opener-btn" type="button">Открыть модалку 2 ✅</button>
+            <button data-dialog-btn-for="3" class="dialog-opener-btn" type="button">Открыть модалку 3 ✅</button>
+
+            <dialog class="dialog" data-dialog="1">
+                <div class="dialog__wrapper">
+                    <h2>Модалка 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos accusamus magni repudiandae, necessitatibus eum, ab commodi non atque, eveniet reprehenderit natus placeat tempora blanditiis nulla sequi hic ullam culpa?</p>   
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, accusantium!</p>
+                    <button class="dialog__close-btn" type="button">Close ❌</button>
+                </div>
+            </dialog>
+
+            <dialog class="dialog" data-dialog="2">
+                <div class="dialog__wrapper">
+                    <h2>Модалка 2</h2>
+                    <button class="dialog__close-btn" type="button">Close ❌</button>
+                </div>
+            </dialog>
+
+            <dialog class="dialog" data-dialog="3">
+                <div class="dialog__wrapper">
+                    <h2>Модалка 3</h2>
+                    <button class="dialog__close-btn" type="button">Close ❌</button>
+                </div>
+            </dialog>
+            
+        </div>
+
+    </div>
+</body>
+</html>
